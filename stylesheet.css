@@ -1,9 +1,68 @@
-table {
+#calendar {
+    width: fit-content;
+    margin-left: auto;
+    margin-right:auto;
     border: solid black;
-    background-color: black;
+    background-color: lightblue;
 }
 
-th {
-    padding: 10px;
-    background-color: white;
+table {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: large;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    border-collapse: collapse;
+}
+
+.currentDate {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.currentDate img{
+    border-left: solid black;
+}
+
+.currentMonth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    margin-left: 20px;
+}
+
+.left {
+    transform: rotate(135deg);
+    margin-right: 20px;
+}
+
+.dates th{
+    background-color: lightblue;
+    border-bottom: solid black;
+    border-width: 3px;
+    padding: 15px;
+}
+
+.numDates th {
+    border: solid black;
+    background-color: lightcoral;
+    padding: 15px;
 }

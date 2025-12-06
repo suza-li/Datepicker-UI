@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Limelight&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="stylesheet.css">
         <title>Datepicker UI</title>
     </head>
     <body>
-        <section class="date">
-            <date>MM/DD/YYYY</date>
-            <div id="icon">
-                <img src="" alt="home icon">
+        <section id="calendar">
+            <div class="currentDate">
+                <h3>MM/DD/YYYY</h3>
+                <img src="pfp.png" alt="Yellow
+                 background with cartoon face in middle" width="60px">
             </div>
-        </section>
-        <section class="calendar">
-
+            <div class="currentMonth">
+                <i class="arrow left"></i>
+                <h3>December</h3>
+                <i class="arrow right"></i>
+            </div>
             <table>
-                <tr>
+                <tr class="dates">
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+                <tr class="numDates">
                     <th></th>
                     <th></th>
                     <th></th>
@@ -23,7 +39,7 @@
                     <th>2</th>
                     <th>3</th>
                 </tr>
-                <tr>
+                <tr class="numDates">
                     <th>4</th>
                     <th>5</th>
                     <th>6</th>
@@ -32,7 +48,7 @@
                     <th>9</th>
                     <th>10</th>
                 </tr>
-                <tr>
+                <tr class="numDates">
                     <th>11</th>
                     <th>12</th>
                     <th>13</th>
@@ -41,7 +57,7 @@
                     <th>16</th>
                     <th>17</th>
                 </tr>
-                <tr>
+                <tr class="numDates">
                     <th>18</th>
                     <th>19</th>
                     <th>20</th>
@@ -50,7 +66,7 @@
                     <th>23</th>
                     <th>24</th>
                 </tr>
-                <tr>
+                <tr class="numDates">
                     <th>25</th>
                     <th>26</th>
                     <th>27</th>
